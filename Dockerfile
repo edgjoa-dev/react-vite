@@ -20,4 +20,4 @@ RUN yarn lint
 EXPOSE 3000
 
 # Comando para iniciar la aplicación cuando se ejecute el contenedor
-CMD ["yarn", "start"]
+CMD ["yarn", "dev"]
