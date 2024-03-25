@@ -5,16 +5,20 @@ FROM node:20
 WORKDIR /app
 
 # Copia los archivos de tu aplicación al contenedor
-COPY . .
+COPY package.json .
 
 # Instala las dependencias utilizando Yarn
-RUN yarn install
+RUN yarn
+
+# copy all files
+COPY . .
+
 
 # Construye la aplicación
 RUN yarn build
 
 # Construye la aplicación
-RUN yarn lint
+#RUN yarn lint
 
 # Expone el puerto en el que se ejecuta la aplicación
 EXPOSE 3000

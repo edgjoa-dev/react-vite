@@ -9,3 +9,7 @@ coverage
 *.env.development.local
 *.env.test.local
 *.env.production
+docker-compose.yaml
+Dockerfile
+README.md
+config
